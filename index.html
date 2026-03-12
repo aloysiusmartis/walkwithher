@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Walk With Her — Justice Ventures International</title>
+<meta name="description" content="Small group. Big love. Real freedom. 10 friends, $10/week, 3 months. Together you fund a trafficking survivor's first 90 days of recovery.">
+
+<!-- Open Graph for sharing -->
+<meta property="og:title" content="Walk With Her — Justice Ventures International">
+<meta property="og:description" content="10 friends. $10/week. 3 months. Fund a survivor's first 90 days of recovery.">
+<meta property="og:image" content="https://justiceventures.org/wp-content/uploads/youngwoman_sm.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Walk With Her — JVI">
+<meta name="twitter:description" content="Small group. Big love. Real freedom.">
+<meta name="twitter:image" content="https://justiceventures.org/wp-content/uploads/youngwoman_sm.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',system-ui,sans-serif;color:#2c2c2c;background:#fff;line-height:1.7;-webkit-font-smoothing:antialiased;}
+
+  /* ═══ HERO ═══ */
+  .hero{position:relative;min-height:85vh;display:flex;align-items:flex-end;overflow:hidden;background:#1a1a2e;}
+  .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.5;}
+  .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.6) 70%,rgba(0,0,0,0.85) 100%);}
+  .hero-logo{position:absolute;top:24px;left:32px;z-index:2;height:40px;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.4));}
+  .hero-content{position:relative;z-index:1;padding:60px 48px 52px;max-width:680px;}
+  .hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,6vw,56px);font-weight:700;color:#fff;line-height:1.08;margin-bottom:16px;}
+  .hero h1 em{color:#e8a759;font-style:italic;}
+  .hero-sub{font-size:17px;color:rgba(255,255,255,0.8);margin-bottom:28px;max-width:460px;line-height:1.65;}
+  .hero-sub strong{color:#fff;}
+  .hero-cta{display:inline-block;background:#e8a759;color:#1a1a2e;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:16px 36px;border-radius:50px;text-decoration:none;transition:all 0.2s;}
+  .hero-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,167,89,0.35);}
+
+  /* ═══ SECTIONS ═══ */
+  .section{padding:72px 48px;max-width:800px;margin:0 auto;}
+  .section-title{font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,32px);color:#1a1a2e;text-align:center;margin-bottom:12px;}
+  .section-subtitle{font-size:15px;color:#999;text-align:center;margin-bottom:40px;font-style:italic;}
+
+  /* ═══ OPENER ═══ */
+  .opener{font-family:'Playfair Display',serif;font-size:clamp(18px,3vw,22px);color:#1a1a2e;line-height:1.6;text-align:center;max-width:560px;margin:0 auto;}
+
+  /* ═══ STORIES ═══ */
+  .stories-heading{font-family:'Playfair Display',serif;font-size:24px;color:#1a1a2e;text-align:center;margin-bottom:32px;}
+  .stories-grid{display:flex;flex-direction:column;gap:20px;}
+  .story-card{display:flex;gap:20px;padding:24px;background:#fdfcf9;border-radius:14px;border:1px solid #f0ece6;transition:box-shadow 0.2s;}
+  .story-card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.06);}
+  .story-photo{width:100px;height:100px;border-radius:12px;object-fit:cover;flex-shrink:0;}
+  .story-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#1a1a2e;margin-bottom:2px;}
+  .story-tag{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;}
+  .tag-purple{color:#7c3aed;}.tag-green{color:#059669;}.tag-red{color:#dc2626;}
+  .story-text{font-size:14px;color:#555;line-height:1.7;}
+  .story-now{font-size:11px;font-weight:700;color:#0f3460;margin-top:10px;display:inline-block;background:#eff6ff;padding:5px 12px;border-radius:6px;}
+
+  /* ═══ TIMELINE ═══ */
+  .timeline-section{background:#f9f7f4;}
+  .tl{position:relative;padding-left:36px;max-width:580px;margin:0 auto;}
+  .tl::before{content:'';position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,#e8a759,#3b82f6,#0f3460);border-radius:2px;}
+  .tl-item{position:relative;margin-bottom:32px;}
+  .tl-item:last-child{margin-bottom:0;}
+  .tl-dot{position:absolute;left:-32px;top:4px;width:16px;height:16px;border-radius:50%;border:3px solid #f9f7f4;}
+  .tl-item:nth-child(1) .tl-dot{background:#e8a759;box-shadow:0 0 0 2px #e8a759;}
+  .tl-item:nth-child(2) .tl-dot{background:#3b82f6;box-shadow:0 0 0 2px #3b82f6;}
+  .tl-item:nth-child(3) .tl-dot{background:#0f3460;box-shadow:0 0 0 2px #0f3460;}
+  .tl-period{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#bbb;margin-bottom:2px;}
+  .tl-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#1a1a2e;margin-bottom:6px;}
+  .tl-desc{font-size:14px;color:#666;line-height:1.7;}
+  .tl-stat{display:inline-block;margin-top:10px;background:#fff;padding:5px 14px;border-radius:6px;font-size:11px;font-weight:600;color:#7c4a1e;}
+
+  /* ═══ IMPACT GRID ═══ */
+  .impact-section{background:#0f3460;color:#fff;}
+  .impact-section .section-title{color:#fff;}
+  .impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:560px;margin:0 auto 20px;}
+  .impact-card{padding:22px;background:rgba(255,255,255,0.06);border-radius:12px;border:1px solid rgba(255,255,255,0.08);}
+  .impact-icon{font-size:28px;margin-bottom:10px;}
+  .impact-title{font-size:14px;font-weight:700;color:#fff;margin-bottom:4px;}
+  .impact-desc{font-size:12px;color:rgba(255,255,255,0.55);line-height:1.6;}
+  .impact-full{grid-column:1/-1;display:flex;align-items:center;gap:16px;padding:18px 22px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);border-radius:12px;}
+  .impact-full .impact-icon{margin-bottom:0;font-size:28px;}
+
+  /* ═══ ALL IT TAKES ═══ */
+  .math-row{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:24px;}
+  .math-box{text-align:center;padding:14px 20px;background:#fdfcf9;border:1px solid #f0ece6;border-radius:12px;min-width:90px;}
+  .math-box .big{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#1a1a2e;}
+  .math-box .lbl{font-size:11px;color:#999;margin-top:2px;}
+  .math-box.highlight{background:#0f3460;border-color:#0f3460;}
+  .math-box.highlight .big{color:#e8a759;}
+  .math-box.highlight .lbl{color:rgba(255,255,255,0.6);}
+  .math-plus{font-family:'Playfair Display',serif;font-size:24px;color:#ccc;font-weight:300;}
+  .math-note{font-size:15px;color:#555;text-align:center;line-height:1.7;max-width:480px;margin:0 auto 32px;}
+
+  /* ═══ GROUPS BAR ═══ */
+  .groups-bar{padding:28px 48px;background:#f9f7f4;text-align:center;border-top:1px solid #f0ece6;border-bottom:1px solid #f0ece6;}
+  .groups-label{font-size:12px;color:#aaa;margin-bottom:12px;font-style:italic;}
+  .pills{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;}
+  .pill{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #e8e4de;border-radius:24px;padding:8px 18px;font-size:13px;font-weight:500;color:#555;transition:all 0.15s;}
+  .pill:hover{border-color:#e8a759;color:#1a1a2e;}
+
+  /* ═══ SIGNUP ═══ */
+  .signup-section{background:#0f3460;color:#fff;}
+  .signup-inner{max-width:480px;margin:0 auto;text-align:center;}
+  .signup-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,36px);margin-bottom:6px;}
+  .signup-sub{font-family:'Playfair Display',serif;font-style:italic;font-size:15px;color:rgba(255,255,255,0.5);margin-bottom:32px;}
+  .form{display:flex;flex-direction:column;gap:14px;text-align:left;}
+  .form-row{display:flex;gap:12px;}
+  .form-field{flex:1;display:flex;flex-direction:column;gap:5px;}
+  .form-label{font-size:11px;font-weight:600;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.5px;}
+  .form-input{font-family:'Inter',sans-serif;font-size:14px;padding:14px 16px;border-radius:10px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.06);color:#fff;outline:none;transition:border 0.2s;}
+  .form-input:focus{border-color:#e8a759;}
+  .form-input::placeholder{color:rgba(255,255,255,0.25);}
+  select.form-input{appearance:none;background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='rgba(255,255,255,0.4)' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px;}
+  select.form-input option{background:#1a1a2e;color:#fff;}
+  .form-submit{margin-top:8px;background:#e8a759;color:#1a1a2e;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:18px;border-radius:50px;border:none;cursor:pointer;transition:all 0.2s;}
+  .form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,167,89,0.35);}
+  .form-note{font-size:11px;color:rgba(255,255,255,0.3);margin-top:14px;text-align:center;}
+
+  /* ═══ PS ═══ */
+  .ps-section{padding:48px;max-width:600px;margin:0 auto;text-align:center;}
+  .ps-text{font-size:14px;color:#888;line-height:1.7;font-style:italic;}
+
+  /* ═══ PROOF ═══ */
+  .proof{padding:28px 48px;background:#f0ece6;display:flex;justify-content:space-around;text-align:center;flex-wrap:wrap;gap:16px;}
+  .proof-item{min-width:100px;}
+  .proof-num{font-family:'Playfair Display',serif;font-size:clamp(20px,3vw,28px);font-weight:700;color:#0f3460;}
+  .proof-lbl{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;}
+
+  /* ═══ FOOTER ═══ */
+  .footer{padding:28px 48px;background:#1a1a2e;text-align:center;}
+  .footer-brand{font-size:10px;font-weight:700;color:#666;letter-spacing:2.5px;margin-bottom:6px;}
+  .footer p{font-size:11px;color:#555;line-height:1.6;}
+  .footer a{color:#e8a759;text-decoration:none;}
+  .footer a:hover{text-decoration:underline;}
+
+  /* ═══ RESPONSIVE ═══ */
+  @media(max-width:700px){
+    .section{padding:48px 24px;}
+    .hero-content{padding:40px 24px 36px;}
+    .hero-logo{left:20px;top:20px;height:32px;}
+    .story-card{flex-direction:column;align-items:center;text-align:center;}
+    .story-photo{width:80px;height:80px;}
+    .timeline-section .section{padding:48px 24px;}
+    .impact-section .section{padding:48px 24px;}
+    .impact-grid{grid-template-columns:1fr;}
+    .impact-full{flex-direction:column;text-align:center;}
+    .form-row{flex-direction:column;}
+    .groups-bar{padding:24px 20px;}
+    .signup-section .section{padding:48px 24px;}
+    .proof{padding:24px 20px;}
+    .math-row{gap:8px;}
+    .math-box{min-width:70px;padding:10px 14px;}
+    .math-box .big{font-size:24px;}
+    .ps-section{padding:32px 24px;}
+    .footer{padding:24px 20px;}
+  }
+
+  @media(max-width:400px){
+    .hero h1{font-size:32px;}
+    .hero-sub{font-size:15px;}
+    .pills{gap:6px;}
+    .pill{padding:6px 14px;font-size:12px;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <img class="hero-img" src="https://justiceventures.org/wp-content/uploads/youngwoman_sm.jpg" alt="Young women supported by JVI">
+    <div class="hero-overlay"></div>
+    <img class="hero-logo" src="https://justiceventures.org/wp-content/uploads/Logo_reversed_notag.png" alt="Justice Ventures International">
+    <div class="hero-content">
+      <h1>Walk With <em>Her</em></h1>
+      <p class="hero-sub"><strong>$10 a week. 3 months.</strong> Your group of 10 funds a survivor's first 90 days of recovery after rescue.</p>
+      <a href="#signup" class="hero-cta">Sign Up Your Group</a>
+    </div>
+  </section>
+
+  <!-- ═══ OPENER ═══ -->
+  <div class="section">
+    <p class="opener">Rescue is just the beginning. What happens in the next 90 days determines whether a trafficking survivor goes back to exploitation, or starts a new life.</p>
+  </div>
+
+  <!-- ═══ STORIES ═══ -->
+  <div class="section" style="padding-top:0;">
+    <h2 class="stories-heading">Real Stories. Real Lives.</h2>
+    <div class="stories-grid">
+      <div class="story-card">
+        <img class="story-photo" src="https://justiceventures.org/wp-content/uploads/renusitting_sm.jpg" alt="Savita">
+        <div>
+          <div class="story-name">Savita's Story</div>
+          <div class="story-tag tag-purple">Rescued · Elected Leader</div>
+          <div class="story-text">Rescued in 2019 from a brick kiln where she worked 12-hour days with no pay. With aftercare support, Savita found fair-wage work, saved enough to build a house, and at age 20 was elected to her village council, now serving 100 households.</div>
+          <div class="story-now">Today: Village council leader fighting for her community</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-photo" src="https://justiceventures.org/wp-content/uploads/youngwoman_sm.jpg" alt="Sabina" style="object-position:center 30%;">
+        <div>
+          <div class="story-name">Sabina's Story</div>
+          <div class="story-tag tag-green">Trafficked · Training for Independence</div>
+          <div class="story-text">Trafficked at 17 with her younger sister. Lured by a fake job offer, they were sexually exploited. Sabina escaped, then freed her sister with help from a JVI Justice Hub. Two years of aftercare later, she's completing vocational sewing training.</div>
+          <div class="story-now">Today: Finishing sewing course, saving to support her family</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-photo" src="https://justiceventures.org/wp-content/uploads/drvchildren-crop.jpg" alt="Yamini" style="object-position:center 20%;">
+        <div>
+          <div class="story-name">Yamini's Story</div>
+          <div class="story-tag tag-red">Enslaved · Dreaming Again</div>
+          <div class="story-text">Sold into domestic servitude at 17. Worked 6am to 11pm, seven days a week. No wages. Sexually abused. After rescue, JVI secured her back wages and provided trauma counseling. She chose to stay in Delhi and enrolled in tailoring and beautician courses.</div>
+          <div class="story-now">Today: Studying to open her own beauty parlor</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ TIMELINE ═══ -->
+  <section class="timeline-section">
+    <div class="section">
+      <h2 class="section-title">What Happens in the First 90 Days</h2>
+      <div class="tl">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Days 1–14 · Safety</div>
+          <div class="tl-title">A safe place to breathe</div>
+          <div class="tl-desc">Emergency shelter. Medical screening, food, clothing, a quiet room. Many arrive with nothing. This is the first time no one is hurting them.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Days 14–45 · Healing</div>
+          <div class="tl-title">Beginning to feel human again</div>
+          <div class="tl-desc">Trauma-informed counseling starts. Building trust with people who actually care.</div>
+          <div class="tl-stat">71% of survivors experience depression · 61% suffer from PTSD</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Days 45–90 · First Steps</div>
+          <div class="tl-title">Seeds of a new life</div>
+          <div class="tl-desc">Peer support, life skills, daily choices. The possibility of a different future starts to feel real, and this is when funding often runs out.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ IMPACT ═══ -->
+  <section class="impact-section">
+    <div class="section">
+      <h2 class="section-title">Where Your $1,200 Goes</h2>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="impact-icon">🏠</div>
+          <div class="impact-title">Safe Shelter</div>
+          <div class="impact-desc">Secure room, meals, locked doors that keep danger out, not in</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-icon">💙</div>
+          <div class="impact-title">Trauma Counseling</div>
+          <div class="impact-desc">Weekly sessions with trained counselors who specialize in trafficking recovery</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-icon">🏥</div>
+          <div class="impact-title">Medical Care</div>
+          <div class="impact-desc">Health screening, treatment for injuries, nutritional support</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-icon">🤝</div>
+          <div class="impact-title">Daily Support</div>
+          <div class="impact-desc">Social workers, peer groups, learning to make choices that are yours again</div>
+        </div>
+        <div class="impact-full">
+          <div class="impact-icon">🛡️</div>
+          <div>
+            <div class="impact-title">Legal Protection</div>
+            <div class="impact-desc">JVI lawyers file charges against traffickers, so the people who did this face justice</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ALL IT TAKES ═══ -->
+  <div class="section">
+    <h2 class="section-title">All it takes</h2>
+    <div class="math-row">
+      <div class="math-box">
+        <div class="big">$10</div>
+        <div class="lbl">a week</div>
+      </div>
+      <div class="math-plus">×</div>
+      <div class="math-box">
+        <div class="big">10</div>
+        <div class="lbl">friends</div>
+      </div>
+      <div class="math-plus">×</div>
+      <div class="math-box">
+        <div class="big">12</div>
+        <div class="lbl">weeks</div>
+      </div>
+      <div class="math-plus">=</div>
+      <div class="math-box highlight">
+        <div class="big">$1,200</div>
+        <div class="lbl">One survivor's first 90 days</div>
+      </div>
+    </div>
+    <p class="math-note"><strong>$10 a week is a coffee and a muffin.</strong> You won't miss it. But for someone like Savita, Sabina, or Yamini, it's the difference between going back and starting over.</p>
+  </div>
+
+  <!-- ═══ GROUPS BAR ═══ -->
+  <div class="groups-bar">
+    <div class="groups-label">Any group of friends can do this</div>
+    <div class="pills">
+      <div class="pill">⛪ Church group</div>
+      <div class="pill">💼 Work team</div>
+      <div class="pill">📚 Book club</div>
+      <div class="pill">👯 Friends</div>
+      <div class="pill">🏘️ Neighbors</div>
+      <div class="pill">🎓 Student group</div>
+    </div>
+  </div>
+
+  <!-- ═══ SIGN UP ═══ -->
+  <section class="signup-section" id="signup">
+    <div class="section">
+      <div class="signup-inner">
+        <h2 class="signup-title">Walk With Her</h2>
+        <p class="signup-sub">$10 a week. 3 months. One group. One life changed.</p>
+
+        <form class="form" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label">First Name</label>
+              <input class="form-input" type="text" placeholder="Your first name" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label">Last Name</label>
+              <input class="form-input" type="text" placeholder="Your last name" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label">Email</label>
+            <input class="form-input" type="email" placeholder="you@email.com" required>
+          </div>
+          <div class="form-field">
+            <label class="form-label">I want to</label>
+            <select class="form-input" required>
+              <option value="" disabled selected>Choose one...</option>
+              <option value="join">Join a group ($10/week for 3 months)</option>
+              <option value="lead">Lead a group (I'll gather 10 people)</option>
+              <option value="share">Just share this with my network</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit">Sign Up Your Group</button>
+          <p class="form-note">No long-term commitment. Just 3 months. Cancel anytime.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ P.S. ═══ -->
+  <div class="ps-section">
+    <p class="ps-text">P.S. After your 3 months, if the experience moved you, tell a friend about it. That's how movement starts.</p>
+  </div>
+
+  <!-- ═══ PROOF ═══ -->
+  <div class="proof">
+    <div class="proof-item">
+      <div class="proof-num">216,300</div>
+      <div class="proof-lbl">Lives impacted</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-num">9,540</div>
+      <div class="proof-lbl">Rescued</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-num">10,438</div>
+      <div class="proof-lbl">In aftercare</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-num">85–90%</div>
+      <div class="proof-lbl">Sustained freedom</div>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <p class="footer-brand">JUSTICE VENTURES INTERNATIONAL</p>
+    <p>Communities Flourish with Justice · ECFA Accredited · 501(c)(3)</p>
+    <p style="margin-top:6px;"><a href="mailto:connect@justiceventures.org">connect@justiceventures.org</a> · (202) 455-0812 · <a href="https://justiceventures.org">justiceventures.org</a></p>
+  </footer>
+
+</body>
+</html>
